@@ -1,4 +1,4 @@
-# 🏡 Gala Inmobiliaria – Web Platform (MVP)
+# 🏡 Gala Inmobiliaria – Web Platform
 
 Plataforma web moderna para la presentación de propiedades inmobiliarias, construida con Next.js y consumo de API externa. Optimizada para SEO, rendimiento y escalabilidad futura con integración a WordPress headless.
 
@@ -84,9 +84,9 @@ npm start         # Iniciar servidor en modo producción
 
 ## 📦 Roadmap
 
-- ✅ MVP funcional sin login
+- ✅ MVP funcional (buscador de propiedades, listado de propiedades, detalle de propiedad, contacto, nosotros, header, footer, inicio, mapa, boton pagos).
 - 🔄 Integración futura con WordPress Headless
-- 🔄 Módulos adicionales (IA, testimonios, zonas)
+- 🔄 Módulos adicionales (IA, testimonios, zonas, generacion de PDFs, chatbots, etc).
 - 🔄 Mejoras visuales y UX
 
 ---
@@ -103,8 +103,8 @@ npm start         # Iniciar servidor en modo producción
 
 ## 🧑‍💻 Autor
 
-**Fabián Beltrán** – [LinkedIn](https://www.linkedin.com/) – Web Designer & Developer | React & WordPress
-
+**Fabián Beltrán** – [LinkedIn](https://www.linkedin.com/in/fabian-beltran-/) – Web Designer & Developer | React & WordPress
+fabianbeltranrojas279@gmail.com
 ---
 
 ## 📄 Licencia
