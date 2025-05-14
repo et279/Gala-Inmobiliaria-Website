@@ -11,7 +11,12 @@ Plataforma web moderna para la presentación de propiedades inmobiliarias, const
 - **Axios** – Consumo de API externa de propiedades.
 - **Google Analytics 4 + Tag Manager** – Métricas y seguimiento de interacción.
 - **Vercel** – Hosting para frontend.
-
+- **React Icons** – Iconos de React.
+- **Next SEO** – SEO dinámico.
+- **TypeScript** – Tipado estático.
+- **ESLint** – Linting.
+- **Prettier** – Formateo de código.
+- **React GA4** – Métricas y seguimiento de interacción.
 ---
 
 ## ⚙️ Requisitos Previos
@@ -43,23 +48,54 @@ NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 ## 🧭 Estructura del proyecto
 
 ```
-/pages
-  index.js               # Home
-  contacto.js            # Página de contacto
-  /propiedades
-    index.js             # Listado de propiedades
-    [id].js              # Detalle de propiedad
-/components
-  Layout.js
-  SearchBar.js
-  PropertyCard.js
-  PropertyDetail.js
-/services
-  propiedadesAPI.js      # Lógica de conexión con la API externa
-/utils
-  seoConfig.js           # Configuración SEO dinámica
 /public
-  /assets                # Logos, íconos, imágenes
+  /assets             # Imágenes, íconos, logos estáticos
+
+/src
+├── /app              # Sistema de rutas App Router
+│   ├── page.tsx             # Página Home
+│   ├── layout.tsx           # Layout global (navbar/footer)
+│   ├── globals.css          # Estilos globales
+│
+│   ├── contacto/
+│   │   └── page.tsx         # Página de contacto
+│
+│   ├── propiedades/
+│   │   ├── page.tsx         # Página de resultados (listado)
+│   │   └── [id]/
+│   │       └── page.tsx     # Detalle de propiedad
+│
+│   └── not-found.tsx        # Página 404 personalizada (opcional)
+
+├── /components        # Componentes reutilizables
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── SearchBar.tsx
+│   ├── PropertyCard.tsx
+│   ├── PropertyDetail.tsx
+│   └── ContactForm.tsx
+
+├── /services          # Lógica de conexión a APIs externas
+│   └── propiedadesAPI.ts
+
+├── /utils             # Utilidades generales
+│   └── formatPrice.ts
+│   └── seoConfig.ts
+
+├── /lib               # Configuraciones externas o librerías (ej. analytics)
+│   ├── analytics.ts   # Google Analytics setup
+│   └── tagManager.ts  # Google Tag Manager init
+
+├── /types             # Interfaces TypeScript
+│   └── propiedad.ts
+
+├── /hooks             # Custom hooks
+│   └── useFetch.ts    # (si necesitas manejo de carga, error, etc.)
+
+├── /styles            # Estilos adicionales (opcional)
+│   └── components.module.css (si usas CSS Modules)
+
+
 ```
 
 ---
@@ -105,6 +141,7 @@ npm start         # Iniciar servidor en modo producción
 
 **Fabián Beltrán** – [LinkedIn](https://www.linkedin.com/in/fabian-beltran-/) – Web Designer & Developer | React & WordPress
 fabianbeltranrojas279@gmail.com
+
 ---
 
 ## 📄 Licencia
