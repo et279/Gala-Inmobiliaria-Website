@@ -30,9 +30,10 @@ Plataforma web moderna para la presentación de propiedades inmobiliarias, const
 ## 🧱 Instalación local
 
 ```bash
-git clone https://github.com/[TU_USUARIO]/gala-inmobiliaria-Website.git
-cd gala-inmobiliaria-Website
+git clone https://github.com/et279/Gala-Inmobiliaria-Website.git
+cd Gala-Inmobiliaria-Website
 npm install
+cd website
 ```
 
 ### Crear archivo `.env.local`

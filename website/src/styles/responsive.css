@@ -1,0 +1,52 @@
+
+
+/* Clases responsivas personalizadas para Gala Inmobiliaria */
+@layer components {
+  /* Botón principal responsive */
+  .btn-primary {
+    @apply px-6 py-3 text-base md:text-lg rounded-xl font-semibold text-white bg-[var(--color-foreground)] hover:bg-[var(--color-accent)] transition;
+  }
+
+  /* Sección genérica con padding */
+  .section {
+    @apply py-10 px-4 md:px-12 lg:px-24;
+  }
+
+  /* Título principal */
+  .title-main {
+    @apply text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[var(--color-foreground)] leading-tight;
+  }
+
+  /* Texto descriptivo o subtítulo */
+  .subtitle {
+    @apply text-base sm:text-lg md:text-xl text-[var(--color-text-secondary)] mt-4 mb-6;
+  }
+
+  /* Card responsive */
+  .property-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition;
+  }
+
+  .property-card img {
+    @apply w-full h-auto object-cover;
+  }
+
+  .property-card-content {
+    @apply p-4 md:p-6;
+  }
+
+  /* Grid de propiedades */
+  .property-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  /* Layout flex en columna para mobile y fila para desktop */
+  .responsive-row {
+    @apply flex flex-col md:flex-row gap-6 items-center;
+  }
+
+  /* Ajustes de formulario responsivo */
+  .form-control {
+    @apply w-full max-w-xl mx-auto space-y-4;
+  }
+}

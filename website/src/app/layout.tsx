@@ -5,6 +5,20 @@ import Analytics from "@/lib/Analytics";
 import TagManager from "@/lib/TagManager";
 import SeoProvider from "@/components/SeoProvide";
 import TagManagerNoScript from "@/lib/TagManagerNoScript";
+import { Inter, Merriweather } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-serif",
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +41,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={`dark`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
         <Analytics />
         <TagManager />

@@ -1,0 +1,19 @@
+
+/* Variables de identidad visual de Gala Inmobiliaria */
+:root {
+    --color-background: #ffffff;
+    --color-foreground: #0A1320; /* Azul muy oscuro institucional */
+    --color-accent: #ff6b00; /* Naranja para CTA */
+    --color-text-secondary: #5E5E5E; /* Gris oscuro para texto */
+    --color-surface: #F1F1F1; /* Gris claro para fondos neutros */
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Merriweather', serif;
+  }
+  
+  .dark {
+    --color-background: #0A1320;
+    --color-foreground: #F1F1F1;
+    --color-accent: #ff6b00;
+    --color-text-secondary: #CCCCCC;
+    --color-surface: #1A1A1A;
+  }

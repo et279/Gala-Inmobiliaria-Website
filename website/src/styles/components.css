@@ -1,0 +1,10 @@
+
+@layer components {
+    .card {
+      @apply bg-white rounded-lg shadow-sm p-6 transition hover:shadow-md;
+    }
+  
+    .badge {
+      @apply inline-block px-3 py-1 text-sm font-medium bg-[var(--color-surface)] text-[var(--color-foreground)] rounded-full;
+    }
+  }
