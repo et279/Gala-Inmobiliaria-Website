@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { DefaultSeo } from "next-seo"
-import SEO from "../next-seo.config"
-import Script from "next/script";
+import Analytics from "@/lib/Analytics";
+import TagManager from "@/lib/TagManager";
+import SeoProvider from "@/components/SeoProvide";
+import TagManagerNoScript from "@/lib/TagManagerNoScript";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,25 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <head>
-        {/* Google Analytics */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
-          `}
-        </Script>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <DefaultSeo {...SEO} />
+        <Analytics />
+        <TagManager />
+        <TagManagerNoScript />
+        <SeoProvider />
         {children}
       </body>
     </html>

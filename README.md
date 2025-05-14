@@ -73,7 +73,8 @@ NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 │   ├── SearchBar.tsx
 │   ├── PropertyCard.tsx
 │   ├── PropertyDetail.tsx
-│   └── ContactForm.tsx
+│   └── ContactForm.tsx 
+│   └── SeoProvider.tsx 
 
 ├── /services          # Lógica de conexión a APIs externas
 │   └── propiedadesAPI.ts
@@ -84,7 +85,8 @@ NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 
 ├── /lib               # Configuraciones externas o librerías (ej. analytics)
 │   ├── analytics.ts   # Google Analytics setup
-│   └── tagManager.ts  # Google Tag Manager init
+│   ├── tagManager.ts  # Google Tag Manager init
+│   └── tagManagerNoScript.tsx  # Google Tag Manager NoScript
 
 ├── /types             # Interfaces TypeScript
 │   └── propiedad.ts
@@ -113,8 +115,9 @@ npm start         # Iniciar servidor en modo producción
 ## 📈 SEO y Tracking
 
 - SEO dinámico con `next-seo`
-- Integración con Google Analytics 4
-- Google Tag Manager configurado en `pages/_document.js`
+- Integración con Google Analytics 4 en `src/lib/Analytics.tsx`
+- Google Tag Manager configurado en `src/lib/TagManager.tsx`
+- Google Tag Manager NoScript configurado en `src/lib/TagManagerNoScript.tsx`
 
 ---
 
