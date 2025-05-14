@@ -96,7 +96,9 @@ NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 │   └── useFetch.ts    # (si necesitas manejo de carga, error, etc.)
 
 ├── /styles            # Estilos adicionales (opcional)
-│   └── components.module.css (si usas CSS Modules)
+│   └── components.css
+│   └── theme.css
+│   └── responsive.css
 
 
 ```
@@ -144,7 +146,8 @@ npm start         # Iniciar servidor en modo producción
 ## 🧑‍💻 Autor
 
 **Fabián Beltrán** – [LinkedIn](https://www.linkedin.com/in/fabian-beltran-/) – Web Designer & Developer | React & WordPress
-fabianbeltranrojas279@gmail.com
+
+Correo: [fabianbeltranrojas279@gmail.com](mailto:fabianbeltranrojas279@gmail.com)
 
 ---
 
