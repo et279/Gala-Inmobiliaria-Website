@@ -1,6 +1,6 @@
 // tailwind.config.ts
 
-const config = {
+module.exports = {
   darkMode: 'class',
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
@@ -26,6 +26,4 @@ const config = {
     },
   },
   plugins: [],
-};
-
-export default config;
+}

@@ -1,10 +1,38 @@
 
-@layer components {
-    .card {
-      @apply bg-white rounded-lg shadow-sm p-6 transition hover:shadow-md;
-    }
-  
-    .badge {
-      @apply inline-block px-3 py-1 text-sm font-medium bg-[var(--color-surface)] text-[var(--color-foreground)] rounded-full;
-    }
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--color-foreground);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+}
+
+.section {
+  padding: 4rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: var(--color-surface);
   }
+}

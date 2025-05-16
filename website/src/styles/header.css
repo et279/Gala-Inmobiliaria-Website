@@ -1,0 +1,136 @@
+/* src/styles/header.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: none;
+  background-color: var(--color-header);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.header.scrolled {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 90px;
+  object-fit: contain;
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  margin-left: 1.5rem;
+  color: var(--color-foreground);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  align-content: center;
+}
+
+
+
+.btn-nav {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--color-button);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0);
+}
+
+.desktop-nav .btn-nav:hover {
+  background-color: var(--color-button-hover);
+  color: var(--color-text-button-hover)!important; 
+  transition: background-color 0.3s;
+  transition: color 0.2s ease;
+  box-shadow: var(--box-shadow-button-hover);
+}
+
+
+/* Estilos adicionales para el botón de cambio de tema */
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--color-foreground);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--color-accent);
+}
+.desktop-nav a:hover {
+  color: var(--color-accent);
+}
+.mobile-toggle {
+  background: none;
+  border: none;
+  display: block;
+  color: var(--color-foreground);
+}
+
+.mobile-nav {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-nav.open {
+  max-height: 200px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.mobile-nav a {
+  color: var(--color-foreground);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav a:hover {
+  color: var(--color-accent);
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 60px;
+  }
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-toggle,
+  .mobile-nav {
+    display: none;
+  }
+}

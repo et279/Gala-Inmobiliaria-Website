@@ -7,7 +7,6 @@ Plataforma web moderna para la presentación de propiedades inmobiliarias, const
 ## 🚀 Tecnologías Utilizadas
 
 - **Next.js** – Framework de React con soporte SSR/SSG.
-- **Tailwind CSS** – Para estilos rápidos y responsivos.
 - **Axios** – Consumo de API externa de propiedades.
 - **Google Analytics 4 + Tag Manager** – Métricas y seguimiento de interacción.
 - **Vercel** – Hosting para frontend.

@@ -6,6 +6,7 @@ import TagManager from "@/lib/TagManager";
 import SeoProvider from "@/components/SeoProvide";
 import TagManagerNoScript from "@/lib/TagManagerNoScript";
 import { Inter, Merriweather } from "next/font/google";
+import Header from "@/components/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -49,6 +50,8 @@ export default function RootLayout({
         <TagManager />
         <TagManagerNoScript />
         <SeoProvider />
+        <Header />
+
         {children}
       </body>
     </html>

@@ -8,6 +8,12 @@
     --color-surface: #F1F1F1; /* Gris claro para fondos neutros */
     --font-sans: 'Inter', sans-serif;
     --font-serif: 'Merriweather', serif;
+    --color-header: #152131ec;
+    --color-text-primary: #0A1320;
+    --color-button: #ff6b00;
+    --color-button-hover: #ac4800;
+    --color-text-button-hover: #0A1320;
+    --box-shadow-button-hover: 0 2px 7px rgb(255 255 255 / 30%);
   }
   
   .dark {
@@ -16,4 +22,5 @@
     --color-accent: #ff6b00;
     --color-text-secondary: #CCCCCC;
     --color-surface: #1A1A1A;
+    --color-header: #152131ec;
   }
