@@ -53,7 +53,7 @@ NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 
 /src
 ├── /app              # Sistema de rutas App Router
-│   ├── page.tsx             # Página Home
+│   ├── page.tsx             # Págiwna Home
 │   ├── layout.tsx           # Layout global (navbar/footer)
 │   ├── globals.css          # Estilos globales
 │
