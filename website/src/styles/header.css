@@ -4,14 +4,16 @@
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: none;
-  background-color: var(--color-header);
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: var(--color-background-header);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
   z-index: 999;
+  box-shadow: var(--box-shadow);
 }
 
-.header.scrolled {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+.header.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
 }
 
 .container {
@@ -19,24 +21,28 @@
   margin: 0 auto;
   padding: 1rem;
 }
+
 .header-flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .logo-container {
-  display: flex;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 .logo {
-  height: 90px;
+  height: 40px;
   object-fit: contain;
 }
+
 .nav-actions {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 1.25rem;
 }
+
 .desktop-nav {
   display: none;
 }
@@ -50,28 +56,23 @@
   align-content: center;
 }
 
-
+.desktop-nav a:hover {
+  color: var(--color-accent);
+}
 
 .btn-nav {
   padding: 0.5rem 1.25rem;
   background-color: var(--color-button);
-  color: white;
+  color: var(--color-surfaceS);
   border-radius: 0.5rem;
   font-weight: 600;
   transition: background-color 0.3s;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0);
 }
 
-.desktop-nav .btn-nav:hover {
+.btn-nav:hover {
   background-color: var(--color-button-hover);
-  color: var(--color-text-button-hover)!important; 
-  transition: background-color 0.3s;
-  transition: color 0.2s ease;
-  box-shadow: var(--box-shadow-button-hover);
+  color: var(--color-text-button-hover) !important;
 }
-
-
-/* Estilos adicionales para el botón de cambio de tema */
 
 .theme-toggle {
   background: none;
@@ -84,14 +85,12 @@
 .theme-toggle:hover {
   color: var(--color-accent);
 }
-.desktop-nav a:hover {
-  color: var(--color-accent);
-}
+
 .mobile-toggle {
   background: none;
   border: none;
-  display: block;
   color: var(--color-foreground);
+  display: block;
 }
 
 .mobile-nav {
@@ -122,9 +121,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
-    height: 60px;
-  }
   .desktop-nav {
     display: flex;
   }
