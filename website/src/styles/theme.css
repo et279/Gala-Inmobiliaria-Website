@@ -1,27 +1,44 @@
 
 /* Variables de identidad visual de Gala Inmobiliaria */
 :root {
-    --color-background: #ffffff;
-    --color-foreground: #0A1320; /* Azul muy oscuro institucional */
-    --color-accent: #ff6b00; /* Naranja para CTA */
-    --color-text-secondary: #5E5E5E; /* Gris oscuro para texto */
-    --color-surface: #F1F1F1; /* Gris claro para fondos neutros */
-    --font-sans: 'Inter', sans-serif;
-    --font-serif: 'Merriweather', serif;
-    --color-background-header: hsla(215, 52%, 8%, 0.5);
-    --color-header: #152131;
-    --color-text-primary: #0A1320;
-    --color-button: #ff6b00;
-    --color-button-hover: #ac4800;
-    --color-text-button-hover: #0A1320;
-    --box-shadow: 0 2px 10px rgba(150, 150, 150, 0.08);;
-  }
-  
-  .dark {
-    --color-background: #0A1320;
-    --color-foreground: #F1F1F1;
-    --color-accent: #ff6b00;
-    --color-text-secondary: #CCCCCC;
-    --color-surface: #1A1A1A;
-    --color-header: #152131ec;
-  }
+  /* Fondos */
+  --color-background: #ffffff; /* Fondo general blanco */
+  --color-surface: #f1f1f1;    /* Superficies suaves tipo tarjetas */
+  --color-background-header: rgba(255, 255, 255, 0.85); /* header flotante */
+
+  /* TipografÃ­a */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Merriweather', serif;
+
+  /* Colores de texto */
+  --color-text-primary: #0A1320; /* Azul oscuro institucional */
+  --color-text-secondary: #5E5E5E; /* Gris oscuro complementario */
+
+  /* Marca e interacciÃ³n */
+  --color-accent: #ff6b00; /* Naranja marca */
+  --color-accent-hover: #d25500;
+
+  /* Botones */
+  --color-button: #ff6b00;
+  --color-button-hover: #ac4800;
+  --color-text-button-hover: #ffffff;
+
+  /* Header y sombra */
+  --color-header: #152131;
+  --box-shadow: 0 2px 10px rgb(0 0 0 / 23%);;
+}
+
+.dark {
+  --color-background: #0A1320;
+  --color-surface: #1A1A1A;
+  --color-text-primary: #F1F1F1;
+  --color-text-secondary: #CCCCCC;
+  --color-background-header: rgba(10, 19, 32, 0.9);
+  --color-header: #F1F1F1;
+  --color-accent: #ff6b00;
+  --color-accent-hover: #ff8833;
+  --color-button: #ff6b00;
+  --color-button-hover: #d25500;
+  --color-text-button-hover: #ffffff;
+  --box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
