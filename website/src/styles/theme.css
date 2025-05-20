@@ -5,6 +5,7 @@
   --color-background: #ffffff; /* Fondo general blanco */
   --color-surface: #f1f1f1;    /* Superficies suaves tipo tarjetas */
   --color-background-header: rgba(255, 255, 255, 0.85); /* header flotante */
+  --color-background-semitransparent: rgba(255, 255, 255, 0.699); /* Color para degradados */
 
   /* TipografÃ­a */
   --font-sans: 'Inter', sans-serif;
@@ -13,6 +14,7 @@
   /* Colores de texto */
   --color-text-primary: #0A1320; /* Azul oscuro institucional */
   --color-text-secondary: #5E5E5E; /* Gris oscuro complementario */
+  --color-text-card: #0A1320;
 
   /* Marca e interacciÃ³n */
   --color-accent: #ff6b00; /* Naranja marca */
@@ -26,10 +28,14 @@
   /* Header y sombra */
   --color-header: #152131;
   --box-shadow: 0 2px 10px rgb(0 0 0 / 23%);;
+
+  /* Medidas */
+  --max-widht-cont: 1280px;
 }
 
 .dark {
-  --color-background: #0A1320;
+  --color-background: rgb(10, 19, 31);
+  --color-background-semitransparent: rgba(10, 19, 31, 0.699); /* Color para degradados */
   --color-surface: #1A1A1A;
   --color-text-primary: #F1F1F1;
   --color-text-secondary: #CCCCCC;

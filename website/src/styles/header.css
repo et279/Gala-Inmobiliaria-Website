@@ -12,12 +12,12 @@
 }
 
 .header.hide {
-  transform: translateY(-100%);
+  transform: translateY(-100%) !important;
   transition: transform 0.3s ease;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: var(--max-widht-cont);
   margin: 0 auto;
   padding: 1rem;
 }
@@ -120,7 +120,7 @@
   color: var(--color-accent);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width > 768px) {
   .desktop-nav {
     display: flex;
   }

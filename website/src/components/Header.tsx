@@ -98,7 +98,7 @@ export default function Header() {
             <Link href="/propiedades">Propiedades</Link>
             <Link href="/nosotros">Nosotros</Link>
             <Link href="/contacto">Contáctanos</Link>
-            <Link href="/pagos" className="btn-nav">Pagos Virtual</Link>
+            <Link href="https://link.galainmobiliaria.com.co/FJ593d" target="_blank" className="btn-nav" data-event="pago_virtual">Pagos Virtual</Link>
           </nav>
           {/* Theme Toggle */}
           <button onClick={toggleTheme} aria-label="Cambiar tema" className="theme-toggle">
