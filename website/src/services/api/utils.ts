@@ -1,0 +1,1 @@
+export const buildUrl = (endpoint: string) => `${endpoint}/${process.env.NEXT_PUBLIC_NOMBRE_EMPRESA}`;

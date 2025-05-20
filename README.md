@@ -38,7 +38,7 @@ cd website
 ### Crear archivo `.env.local`
 
 ```env
-NEXT_PUBLIC_API_URL=https://api.tercero.com/propiedades
+NEXT_PUBLIC_API_URL=https://api.tercero.com/api/
 NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=G-XXXXXXX
 NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 ```
